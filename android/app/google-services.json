@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "187986966624",
+    "project_id": "chat-flutter-sat",
+    "storage_bucket": "chat-flutter-sat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:187986966624:android:7a7ea4fa872aabfc5dab05",
+        "android_client_info": {
+          "package_name": "com.example.chat_app_sat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "187986966624-60biv9doai1jgb8lld994vhtt0bbo4og.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD-9MdwEuUZ-_nTQw7GRnlpup1UiL_Mnnw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "187986966624-60biv9doai1jgb8lld994vhtt0bbo4og.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
