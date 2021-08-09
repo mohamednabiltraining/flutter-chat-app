@@ -1,3 +1,4 @@
+import 'package:chat_app_sat/model/Message.dart';
 import 'package:chat_app_sat/model/Room.dart';
 import 'package:chat_app_sat/model/User.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -17,3 +18,13 @@ CollectionReference<Room> getRoomsCollectionWithConverter(){
     toFirestore: (room, _) => room.toJson(),
   );
 }
+ CollectionReference<Message> getMessagesCollectionWithConverter(Room room){
+    DocumentReference<Room>
+   roomFireStoreRef = getRoomsCollectionWithConverter()
+       .doc(room.id);
+
+    return roomFireStoreRef.collection('messages')
+   .withConverter<Message>(  fromFirestore: (snapshot, _) => Message.fromJson(snapshot.data()!),
+     toFirestore: (message, _) => message.toJson(),
+   );
+ }

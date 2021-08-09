@@ -3,6 +3,7 @@ import 'package:chat_app_sat/auth/LoginScreen.dart';
 import 'package:chat_app_sat/auth/RegisterScreen.dart';
 import 'package:chat_app_sat/AppProvider.dart';
 import 'package:chat_app_sat/home/HomeScreen.dart';
+import 'package:chat_app_sat/room/RoomScreen.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
             RegisterScreen.ROUTE_NAME:(buildContext)=>RegisterScreen(),
             HomeScreen.ROUTE_NAME:(buildContext)=>HomeScreen(),
             AddRoom.ROUTE_NAME:(buildContext)=>AddRoom(),
+            RoomScreen.routeName:(buildContext)=>RoomScreen(),
           },
           initialRoute:
               isLoggedInUser? HomeScreen.ROUTE_NAME:
